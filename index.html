@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined To-Do App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<button id="themeToggle">🌓</button>
+<div id="appTitle">To-Do List</div>
+<div id="messageBox"></div>
+
+<div id="welcomePage" class="center">
+  <div class="container">
+    <h1 id="greetingText">Welcome!</h1>
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showSignup()">Sign Up</button>
+  </div>
+</div>
+
+<div id="loginPage" class="center hidden">
+  <div class="container">
+    <h2>Login</h2>
+    <input id="loginUser" placeholder="Username">
+    <input id="loginPass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+  </div>
+</div>
+
+<div id="signupPage" class="center hidden">
+  <div class="container">
+    <h2>Sign Up</h2>
+    <input id="signupUser" placeholder="Username">
+    <input id="signupPass" type="password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <p id="signupMsg"></p>
+  </div>
+</div>
+
+<div id="todoPage" class="hidden">
+  <div class="container">
+    <h2>Hi <span id="currentUser"></span> <button onclick="logout()">Logout</button></h2>
+    <div id="taskForm">
+      <input id="taskInput" placeholder="Task">
+      <input id="dateInput" type="date">
+      <select id="catInput">
+        <option value="General">General</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

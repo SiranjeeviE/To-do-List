@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1a202c;
+        color: #fff;
+}
+
+body.light {
+    background: #d0d0d0;
+    color: #333;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+}
+
+input,select,button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.task {
+    background: #2d3748;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+}
+
+body.light .task {
+    background: #dcdfe3;
+}
+
+.task small {
+    display: block;
+    font-size: 11px;
+    color: #a0aec0;
+}
+
+#themeToggle {
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height:40px;
+}
+
+#appTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#todoPage .container {
+    margin: 50px auto;
+}
+
+#taskForm {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+
+#messageBox {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #38b2ac;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
