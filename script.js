@@ -1,6 +1,6 @@
 const themeToggle = document.getElementById('themeToggle');
 themeToggle.onclick = () => {
-    document.body.classList.toggle('light');
+    document.body.classList.toggle('dark');
 };
 
 const welcomePage = document.getElementById('welcomePage');
