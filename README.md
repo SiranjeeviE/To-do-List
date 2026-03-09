@@ -48,6 +48,3 @@ Start the frontend (in a new terminal):
 ```bash
 npm run dev
 ```
-
----
-*Created with ❤️ by SiranjeeviE*
